@@ -21,6 +21,8 @@
 		7F984268210D167000028F33 /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F984267210D167000028F33 /* RoundedShadowButton.swift */; };
 		7F98426B210D30CE00028F33 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F98426A210D30CD00028F33 /* UIViewExt.swift */; };
 		7F98426F210D627D00028F33 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F98426E210D627D00028F33 /* LoginViewController.swift */; };
+		7F984271210E124000028F33 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F984270210E124000028F33 /* GoogleService-Info.plist */; };
+		7F984274210E6A2B00028F33 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F984273210E6A2B00028F33 /* DataService.swift */; };
 		CBADE8C0DE95769F6A2A7530 /* Pods_RideSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA74E3C5B6DECDC07C89A8F /* Pods_RideSharing.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,8 @@
 		7F984267210D167000028F33 /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
 		7F98426A210D30CD00028F33 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		7F98426E210D627D00028F33 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7F984270210E124000028F33 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7F984273210E6A2B00028F33 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		9EA74E3C5B6DECDC07C89A8F /* Pods_RideSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RideSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C752CC566104354C856C19 /* Pods-RideSharing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RideSharing.release.xcconfig"; path = "Pods/Target Support Files/Pods-RideSharing/Pods-RideSharing.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +139,7 @@
 		7F98422D2103FEF200028F33 /* RideSharing */ = {
 			isa = PBXGroup;
 			children = (
+				7F984272210E6A1400028F33 /* Services */,
 				7F984269210D30B700028F33 /* Extensions */,
 				7F98425E210D0B8000028F33 /* Modal */,
 				7F98425D210D0B7B00028F33 /* View */,
@@ -144,6 +149,7 @@
 				7F9842352103FEF400028F33 /* Assets.xcassets */,
 				7F9842372103FEF400028F33 /* LaunchScreen.storyboard */,
 				7F98423A2103FEF400028F33 /* Info.plist */,
+				7F984270210E124000028F33 /* GoogleService-Info.plist */,
 			);
 			path = RideSharing;
 			sourceTree = "<group>";
@@ -200,6 +206,14 @@
 				7F98426A210D30CD00028F33 /* UIViewExt.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7F984272210E6A1400028F33 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7F984273210E6A2B00028F33 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F9842392103FEF400028F33 /* LaunchScreen.storyboard in Resources */,
+				7F984271210E124000028F33 /* GoogleService-Info.plist in Resources */,
 				7F9842362103FEF400028F33 /* Assets.xcassets in Resources */,
 				7F9842342103FEF200028F33 /* Main.storyboard in Resources */,
 			);
@@ -391,6 +406,7 @@
 				7F98422F2103FEF200028F33 /* AppDelegate.swift in Sources */,
 				7F98426F210D627D00028F33 /* LoginViewController.swift in Sources */,
 				7F984260210D0ED700028F33 /* GradientView.swift in Sources */,
+				7F984274210E6A2B00028F33 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
